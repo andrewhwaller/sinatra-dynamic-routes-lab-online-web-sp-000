@@ -4,7 +4,7 @@ class App < Sinatra::Base
   # Write your code here!
   get '/reversename/:name' do
     @name = :name
-    "Are we in the Red Room, #{@name.reverse!}?"
+    "Are we in the Red Room, #{@name.to_s.reverse!}?"
   end
 
   get '/square/:number' do
