@@ -17,7 +17,7 @@ class App < Sinatra::Base
     end
     answer
   end
-  
+
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     answer = ''
     answer += params[:word1] + params[:word2] + params[:word3] + params[:word4] + params[:word5]
@@ -26,7 +26,7 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-  
+
   end
 
 end
